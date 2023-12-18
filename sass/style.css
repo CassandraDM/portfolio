@@ -549,7 +549,7 @@ h2 {
     width: 21px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .navbar-right {
     display: none;
   }

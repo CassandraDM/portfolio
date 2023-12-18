@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  padding: 0px 130px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.navbar-item {
+  color: var(--white-500);
+  position: relative;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-family: Poppins;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    &::after,
+    &::before {
+      width: 50%;
+    }
+
+    color: var(--white-main);
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: var(--space-3xs);
+    background-color: var(--white-main);
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &::after {
+    left: 50%;
+  }
+
+  &::before {
+    right: 50%;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illu {
+  width: 100%;
+  max-width: 590px;
+}
+
+.title-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  color: var(--primary-main);
+  font-family: Gravitas One;
+  font-weight: 400;
+  font-size: var(--space-7xl);
+}
+
+.subtitle {
+  color: var(--primary-dark);
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: var(--space-lg);
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="navbar">
+          <img src="./assets/logoportfolio.svg" alt="" class="logo" />
+          <div class="navbar-right">
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="#doodles" class="navbar-item">Doodles</a>
+            <a href="#about-me" class="navbar-item">About me</a>
+            <a href="#contacts" class="navbar-item">Contacts</a>
+          </div>
+          <img
+            src="./assets/menu.svg"
+            alt=""
+            onclick="toggleMenu()"
+            class="menu-btn"
+          />
+        </div>
+        <div class="header-content">
+          <img src="./assets/portfoliov1finall 1.png" alt="" class="illu" />
+          <div class="title-container">
+            <h1 class="title">Hi ! Welcome on my portfolio !</h1>
+            <p class="subtitle">I'm a front-end developer :)</p>
+          </div>
+        </div>
+      </header>
+      <section class="projects" id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="cards-container">
+          <div class="card-content left">
+            <img src="./assets/Marshall.png" alt="" class="mock-up" />
+            <div class="container">
+              <div class="type-project">School</div>
+              <div class="text-container">
+                <div class="title-content">
+                  <h1 class="title">Marshall</h1>
+                  <div class="chip-container">
+                    <div class="chip">
+                      <img src="./assets/html.svg" alt="" class="icon" />
+                      <p>HTML</p>
+                    </div>
+                    <div class="chip">
+                      <img src="./assets/CSS.svg" alt="" class="icon" />
+                      <p>CSS</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-content">
+                  <div class="description">
+                    Integration of the landing page Marshall.
+                  </div>
+                  <button class="full-project">Full project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-content right">
+            <div class="container">
+              <div class="type-project">School</div>
+              <div class="text-container">
+                <div class="title-content">
+                  <h1 class="title">Landing Foodies</h1>
+                  <div class="chip-container">
+                    <div class="chip">
+                      <img src="./assets/html.svg" alt="" class="icon" />
+                      <p>HTML</p>
+                    </div>
+                    <div class="chip">
+                      <img src="./assets/CSS.svg" alt="" class="icon" />
+                      <p>CSS</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-content">
+                  <div class="description">
+                    Integration of the landing page Foodies.
+                  </div>
+                  <button
+                    class="full-project"
+                    onclick="window.location.href='http://foodies.cassandra-delmasmarchiset.com/';"
+                  >
+                    Full project
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/foodies.png" alt="" class="mock-up" />
+            <div class="mock-up-container">
+              <div class="type-project">School</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-content left">
+          <img src="./assets/dashboard.png" alt="" class="mock-up" />
+          <div class="container">
+            <div class="type-project">School</div>
+            <div class="text-container">
+              <div class="title-content">
+                <h1 class="title">Dashboard Music</h1>
+                <div class="chip-container">
+                  <div class="chip">
+                    <img src="./assets/Figma.svg" alt="" class="icon" />
+                    <p>Figma</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-content">
+                <div class="description">
+                  Creation of a Dashboard for a music app.
+                </div>
+                <button class="full-project">Full project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card-content right">
+          <div class="container">
+            <div class="type-project">School</div>
+            <div class="text-container">
+              <div class="title-content">
+                <h1 class="title">Plants</h1>
+                <div class="chip-container">
+                  <div class="chip">
+                    <img src="./assets/Illustrator.svg" alt="" class="icon" />
+                    <p>Illustrator</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-content">
+                <div class="description">
+                  Creation of plants with Illustrator.
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="./assets/plants.pdf" alt="" class="mock-up" />
+          <div class="mock-up-container">
+            <div class="type-project">School</div>
+          </div>
+        </div>
+        <div class="card-content left">
+          <img src="./assets/spacewalien.pdf" alt="" class="mock-up" />
+          <div class="container">
+            <div class="type-project">School</div>
+            <div class="text-container">
+              <div class="title-content">
+                <h1 class="title">Space</h1>
+                <div class="chip-container">
+                  <div class="chip">
+                    <img src="./assets/Illustrator.svg" alt="" class="icon" />
+                    <p>Illustrator</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-content">
+                <div class="description">
+                  Creation of a space background with a character.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-content right">
+          <div class="container">
+            <div class="type-project">School</div>
+            <div class="text-container">
+              <div class="title-content">
+                <h1 class="title">E-commerce</h1>
+                <div class="chip-container">
+                  <div class="chip">
+                    <img src="./assets/html.svg" alt="" class="icon" />
+                    <p>HTML</p>
+                  </div>
+                  <div class="chip">
+                    <img src="./assets/CSS.svg" alt="" class="icon" />
+                    <p>CSS</p>
+                  </div>
+                  <div class="chip">
+                    <img src="./assets/Javascript.svg" alt="" class="icon" />
+                    <p>Javascript</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-content">
+                <div class="description">
+                  Creation of an e-commerce platform.
+                </div>
+                <button class="full-project">Full project</button>
+              </div>
+            </div>
+          </div>
+          <img src="./assets/foodies.png" alt="" class="mock-up" />
+          <div class="mock-up-container">
+            <div class="type-project">School</div>
+          </div>
+        </div> -->
+      </section>
+      <section class="doodles" id="doodles">
+        <h1 class="title">Doodles</h1>
+        <div class="doodles-container">
+          <img src="./assets/oceane_jimenez_satura.jpg" alt="" class="doodle" />
+          <img src="./assets/section.jpg" alt="" class="doodle" />
+          <img src="./assets/logoanglais.jpg" alt="" class="doodle" />
+        </div>
+      </section>
+      <section class="about-me" id="about-me">
+        <h1 class="title">About me</h1>
+        <div class="about-me-container">
+          <div class="who-am-i-container">
+            <h2 class="title">Who am I ?</h2>
+            <p class="text-content">
+              Greetings! I'm Cassandra Delmas-Marchiset, a passionate French
+              student immersed in the world of Web Development. I’m currently in
+              first year of bachelor in Web development at ESD in Bordeaux.
+              Beyond the lines of code, my creative spirit thrives through my
+              love for drawing. <br /><br />
+              As I embark on my journey in web development, I am eager to
+              enhance my skills and gain hands-on experience. Thus, I am
+              currently seeking an internship for a period of two months, from
+              February 19 to April 19, 2024.
+            </p>
+          </div>
+          <div class="skills-container">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+              <div class="chip-container">
+                <div class="chip">
+                  <img
+                    src="./assets/VisualStudioCode.svg"
+                    alt=""
+                    class="icon"
+                  />
+                  <p>Visual Studio Code</p>
+                </div>
+                <div class="chip">
+                  <img src="./assets/ClipStudioPaint.svg" alt="" class="icon" />
+                  <p>Clip Studio Paint</p>
+                </div>
+                <div class="chip">
+                  <img src="./assets/Illustrator.svg" alt="" class="icon" />
+                  <p>Illustrator</p>
+                </div>
+                <div class="chip">
+                  <img src="./assets/Figma.svg" alt="" class="icon" />
+                  <p>Figma</p>
+                </div>
+              </div>
+              <div class="chip-container">
+                <div class="chip">
+                  <img src="./assets/html.svg" alt="" class="icon" />
+                  <p>HTML</p>
+                </div>
+                <div class="chip">
+                  <img src="./assets/CSS.svg" alt="" class="icon" />
+                  <p>CSS</p>
+                </div>
+                <div class="chip">
+                  <img src="./assets/Javascript.svg" alt="" class="icon" />
+                  <p>Javascript</p>
+                </div>
+                <div class="chip">
+                  <img src="./assets/Python.svg" alt="" class="icon" />
+                  <p>Python</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts-container">
+          <div class="contacts-content">
+            <h2 class="title">Contacts</h2>
+            <div class="contact-content">
+              <div class="contact-item">
+                <img src="./assets/mail.svg" alt="" class="icon" />
+                <a
+                  href="mailto:delmasmarchiset.cassandra@gmail.com"
+                  class="information"
+                  >delmasmarchiset.cassandra@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <img src="./assets/phone.svg" alt="" class="icon" />
+                <p class="information">+33 7 86 71 09 07</p>
+              </div>
+              <div class="contact-item">
+                <img src="./assets/LinkedIn.svg" alt="" class="icon" />
+                <a
+                  href="https://www.linkedin.com/in/cassandra-delmas-marchiset"
+                  class="information"
+                >
+                  www.linkedin.com/in/cassandra-delmas-marchiset
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-content">
+            <h2 class="title">My CV</h2>
+
+            <button class="cv" id="downloadButton">Download my CV</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/scroll-reveal.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/download.js"></script>
+  </body>
+</html>

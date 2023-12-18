@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:wght@400;600;700;800&display=swap");
+
+:root {
+  // text-color
+  --primary-main: #4fce80;
+  --primary-dark: #1d683a;
+  //secondary-color
+  --secondary-main: #309178;
+  --secondary-light: #84d6c1;
+  --secondary-dark: #235d4e;
+  --secondary-xdark: #174539;
+  --grey-main: #1a1a1a;
+  --grey-900: rgba(26, 27, 43, 0.9);
+  --grey-800: rgba(26, 27, 43, 0.8);
+  --grey-700: rgba(26, 27, 43, 0.7);
+  --grey-600: rgba(26, 27, 43, 0.6);
+  --grey-500: rgba(26, 27, 43, 0.5);
+  --grey-400: rgba(26, 27, 43, 0.4);
+  --grey-300: rgba(26, 27, 43, 0.3);
+  --grey-200: rgba(26, 27, 43, 0.2);
+  --grey-100: rgba(26, 27, 43, 0.1);
+  --white-main: rgba(255, 255, 255);
+  --white-900: rgba(255, 255, 255, 0.9);
+  --white-800: rgba(255, 255, 255, 0.8);
+  --white-700: rgba(255, 255, 255, 0.7);
+  --white-600: rgba(255, 255, 255, 0.6);
+  --white-500: rgba(255, 255, 255, 0.5);
+  --white-400: rgba(255, 255, 255, 0.4);
+  --white-300: rgba(255, 255, 255, 0.3);
+  --white-200: rgba(255, 255, 255, 0.2);
+  --white-100: rgba(255, 255, 255, 0.1);
+  --space-none: 0px;
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 28px;
+  --space-4xl: 32px;
+  --space-5xl: 36px;
+  --space-6xl: 40px;
+  --space-7xl: 44px;
+  --space-8xl: 48px;
+  --space-9xl: 56px;
+  --space-10xl: 64px;
+  --space-11xl: 72px;
+  --space-12xl: 80px;
+  --space-full: 100px;
+  --space-sectionSmallMaxWidth: 1200px;
+  --space-sectionLargeMaxWidth: 1400px;
+  --space-sectionPadding: 112px;
+  --space-blockSize: 450px;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: var(--grey-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+}
+
+@import "./sections/header";
+@import "./sections/projects";
+@import "./sections/doodles";
+@import "./sections/about-me";
+@import "./sections/contacts";
+@import "./responsive";

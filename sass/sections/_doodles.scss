@@ -1,0 +1,33 @@
+.doodles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.doodles-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 80px;
+
+  .doodle {
+    width: 340px;
+    height: 340px;
+    border-radius: 200px;
+    transition: border-radius 0.7s, width 0.7s, height 0.7s,
+      transform 0.7s ease-in-out;
+    position: relative;
+    object-fit: cover;
+
+    &:hover {
+      border-radius: 10px;
+      width: 20%;
+      height: auto;
+      transform: scale(1.2);
+    }
+  }
+}

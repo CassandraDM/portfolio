@@ -1,0 +1,174 @@
+@media (max-width: 1200px) {
+  .type-project,
+  .description,
+  .full-project {
+    font-size: var(--space-md) !important;
+  }
+  /*--HEADER--*/
+  .header {
+    padding: 0px 30px;
+  }
+  .illu {
+    max-width: 500px;
+  }
+
+  .title-container {
+    max-width: 520px;
+  }
+
+  /*--PROJECTS--*/
+  .card-content {
+    max-width: 745px;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .mock-up {
+    max-width: 453px;
+  }
+
+  .container {
+    gap: 15px;
+  }
+
+  .text-container {
+    padding: 0px;
+    gap: 16px;
+  }
+
+  .text-content {
+    gap: 16px;
+  }
+
+  .left {
+    padding-right: 40px;
+    .mock-up {
+      margin-top: -40px;
+      margin-left: -70px;
+    }
+  }
+
+  .right {
+    padding-left: 40px;
+    .mock-up {
+      margin-top: -40px;
+      margin-right: -70px;
+    }
+  }
+
+  /*--DOODLES--*/
+  .doodles-container {
+    gap: 70px;
+  }
+
+  /*--ABOUT ME--*/
+  .who-am-i-container .text-content {
+    max-width: 745px;
+  }
+}
+
+@media (max-width: 980px) {
+  /*--HEADER--*/
+  .illu {
+    max-width: 334px;
+  }
+  .title {
+    font-size: var(--space-6xl);
+  }
+  .subtitle {
+    font-size: var(--space-md);
+  }
+
+  /*--ABOUT ME--*/
+  .about-me {
+    .icon {
+      max-width: 14px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+
+  /*--Contacts--*/
+  .contacts {
+    a,
+    p,
+    button {
+      font-size: var(--space-md);
+    }
+    .icon {
+      width: 21px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-right {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .header {
+    gap: 60px;
+  }
+
+  .header-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 30px;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: var(--space-4xl);
+  }
+
+  .card-content {
+    max-width: 334px;
+    padding: 20px;
+    gap: 6px;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    .mock-up {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  }
+
+  .description {
+    width: auto;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .type-project {
+    border-radius: 10px;
+  }
+
+  .who-am-i-container .text-content {
+    max-width: 350px;
+  }
+
+  .chip-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts-container {
+    flex-direction: column;
+  }
+
+  .contacts-content {
+    align-items: center;
+  }
+}
